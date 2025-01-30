@@ -27,7 +27,7 @@ def print_grid(grid: List[List[str]]):
 
 with open(file=source_path) as f:
     while line := f.readline():
-        input_data.append([x.strip() for x in line if x.strip() is not ""])
+        input_data.append([x.strip() for x in line if x.strip() != ""])
     # print(input_data)
 
 # print_grid(input_data)
